@@ -17,8 +17,5 @@ import java.util.List;
 public class UserController {
     private final UserService userService;
 
-    @GetMapping(path = "/users", produces = MediaType.APPLICATION_JSON_VALUE)
-    public @ResponseBody List<User> getAllUsers() {
-        return userService.getAllUsers();
-    }
+
 }
