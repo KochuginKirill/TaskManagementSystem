@@ -31,6 +31,7 @@ public class UserController {
     }
 
     @PostMapping("/users/create")
+    @ResponseBody
     public String create(User user) {
         userService.create(user);
         String result = user.getUsername() + " создан";
