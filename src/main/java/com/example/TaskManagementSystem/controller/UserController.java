@@ -37,6 +37,4 @@ public class UserController {
         log.info(result);
         return (result);
     }
-
-
 }
